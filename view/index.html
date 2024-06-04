@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="container">
+        <h1>Weather Forecast</h1>
+        <form id="weather-form">
+            <input type="text" id="city" placeholder="Enter city" required>
+            <select id="days" required>
+                <option value="1">1 day</option>
+                <option value="2">2 days</option>
+                <option value="3">3 days</option>
+                <option value="4">4 days</option>
+                <option value="5">5 days</option>
+                <option value="6">6 days</option>
+                <option value="7">7 days</option>
+                <option value="8">8 days</option>
+                <option value="9">9 days</option>
+                <option value="10">10 days</option>
+            </select>
+            <button type="submit">Fetch Weather</button>
+        </form>
+        <div id="forecast">
+            <table id="forecast-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Forecast Date</th>
+                        <th>Max Temp (°C)</th>
+                        <th>Min Temp (°C)</th>
+                        <th>Current Temp (°C)</th>
+                        <th>Feels like</th>
+                        <th>Condition</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <button id="download-pdf">Download PDF</button>
+        <div class="pdf-header">
+            <h1 id="pdf-title"></h1>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
